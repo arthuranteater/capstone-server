@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const deviceSchema = mongoose.Schema({
+const deviceSchema = new mongoose.Schema({
     userName: String,
     deviceKey: String,
     latitude: Number,

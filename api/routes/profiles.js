@@ -21,7 +21,6 @@ router.get('/', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
     const profile = new Profile({
-        _id: new mongoose.Types.ObjectId(),
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         petName: req.body.petName,

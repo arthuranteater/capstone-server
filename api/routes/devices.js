@@ -20,7 +20,6 @@ router.get('/', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
     device = new Device({
-        _id: new mongoose.Types.ObjectId(),
         userName: req.params.body.userName,
         deviceKey: req.params.body.deviceKey,
         latitude: req.params.body.latitude,
