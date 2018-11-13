@@ -20,10 +20,10 @@ router.get('/', (req, res, next) => {
 
 router.post('/', (req, res, next) => {
     const device = new Device({
-        userName: req.params.body.userName,
-        deviceKey: req.params.body.deviceKey,
-        latitude: req.params.body.latitude,
-        longitude: req.params.body.longitude,
+        userName: req.body.userName,
+        deviceKey: req.body.deviceKey,
+        latitude: req.body.latitude,
+        longitude: req.body.longitude,
     })
     device.save().then(result => {
         console.log(result)
